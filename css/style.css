@@ -50,6 +50,7 @@
 	position: absolute;
     left: 0;
     top: 0;
+	cursor: pointer
 }
 .nav__block{
 	/* Posicionamiento */
@@ -94,6 +95,7 @@
     justify-content: center;
     right: 0px;
     top: 0px;
+	cursor: pointer
     
 	/* Posicionamiento */
 	text-align: right;
@@ -124,10 +126,18 @@
 	padding-right: 15%;
 	font-size: 2.5rem;
 }
-.imgProd{
+.imgProd:hover{
 	width: 300px;
 	height: 350px;
+	cursor: pointer
 }
+.imgProd:hover{
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+
 .prodDestTitulo{
 	height: 100%;
 	margin-bottom: 50px;
