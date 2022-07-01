@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MG - Inicio</title>
+	<link rel="icon" type="image/icon" sizes="16x16"  href="../img/favicon.ico">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bgLightBlue">
+	<nav class="bgDarkLigthBlue nav__block textWhite">
+		<header class="imgLogoBlock">	
+			<a href="../index.html"  id="inicio">
+				<img src="../img/logo.png" alt="">
+			</a>
+		</header>
+	    <ul class="nav__block--vin">
+            <li class="navButton">
+                <a href="productos.html">PRODUCTOS</a>
+            </li>
+            <li class="navButton">
+                <a href="sucursales.html">SUCURSALES</a>
+            </li>
+            <li class="navButton">
+                <a href="contactanos.html">CONTACTANOS</a>
+            </li>
+            <li class="navButton">
+                <a href="#">MIS COMPRAS</a>
+            </li>
+		</ul>
+		<ul class="nav__list--perfil">
+            <li>
+                <a href="inicio-de-sesion.html">Iniciar sesión</a>
+            </li>
+            <li>
+                <a href="inicio-de-sesion.html#crea-tu-cuenta">Registrarse</a>
+            </li>
+        </ul>
+	</nav>
+	<main>
+        <section class="section__cont">
+        	<form class="form__block" action="envio.php">
+				<div class="divForm--tit">
+					<h5 class="form__titulo textBlack textBold textCenter">Completa con tus datos y te llamamos:</h5>
+				</div>
+        		<fieldset class="fs__block">
+					<div class="divForm">
+						<label class="labelCont textBlack textRegular textCenter" for="nombre-cont">Nombre:</label>
+						<input class="inputCont textBlack" type="text" id="nombre-cont">
+					</div>
+					<div class="divForm">
+						<label class="labelCont textBlack textRegular textCenter" for="apellido-cont">Apellido:</label>
+						<input class="inputCont textBlack" type="text" id="apellido-cont">
+					</div>	
+        		</fieldset>
+        		<fieldset class="fs__block">
+					<div class="divForm">
+        				<h5 class="form__stitulo textBlack textLight textCenter">Sexo</h5>
+					</div>
+					<div class="divForm">
+						<label class="labelCont textBlack textRegular textCenter" for="masculino-cont">Masculino</label>
+						<input class="inputCont" type="radio" id="masculino-cont" value="masculino-cont" name="sexo">
+					</div>
+					<div class="divForm">
+						<label class="labelCont textBlack textRegular textCenter" for="femenino-cont">Femenino</label>
+						<input class="inputCont" type="radio" id="femenino-cont" value="femenino-cont" name="sexo">
+					</div>
+        		</fieldset>
+        		<fieldset class="fs__block">
+					<div class="divForm">
+						<label class="labelCont textBlack textRegular textCenter" for="tdocum-cont">Tipo de documento</label>
+						<select class="textBlack" name="select" id="tdocum-cont">
+							<option class="textBlack textLight textCenter" value="N/A-cont.1">N/A</option>
+							<option class="textBlack textLight textCenter" value="DNI">DNI</option>
+							<option class="textBlack textLight textCenter" value="LE">LE</option>
+							<option class="textBlack textLight textCenter" value="LC">LC</option>
+						</select>
+					</div>
+					<div class="divForm">
+						<label class="labelCont textBlack textRegular textCenter" for="nro.docum-cont">Nº de documento:</label>
+						<input class="inputCont textBlack" type="number" id="nro.docum-cont">
+					</div>
+					<div class="divForm">
+						<label class="labelCont textBlack textRegular textCenter" for="tel.cel-cont">Teléfono celular:</label>
+						<input class="inputCont textBlack" type="number" id="tel.cel-cont">
+					</div>	
+        		</fieldset>
+        		<fieldset class="fs__block">
+					<div class="divForm">
+        				<h5 class="form__stitulop textBlack textBold textCenter">¿Cuándo te podemos llamar?</h5>
+					</div>
+					<div class="divForm">
+        				<h5 class="form__stitulo textBlack textBold">Día:</h5>
+					</div>
+					<div class="divForm--check">
+						<label class="labelCont textBlack" for="lunes-cont">Lunes</label>
+						<input class="inputCont inputCheck" type="checkbox" id="lunes-cont" value="lunes-cont">
+						<label class="labelCont textBlack" for="martes-cont">Martes</label>
+						<input class="inputCont inputCheck" type="checkbox" id="martes-cont" value="martes-cont">
+						<label class="labelCont textBlack" for="miercoles-cont">Miércoles</label>
+						<input class="inputCont inputCheck" type="checkbox" id="miercoles-cont" value="miercoles-cont">
+						<label class="labelCont textBlack" for="jueves-cont">Jueves</label>
+						<input class="inputCont inputCheck" type="checkbox" id="jueves-cont" value="jueves-cont">
+						<label class="labelCont textBlack" for="viernes-cont">Viernes</label>
+						<input class="inputCont inputCheck" type="checkbox" id="viernes-cont" value="viernes-cont">
+						<label class="labelCont textBlack" for="sabado-cont">Sábado</label>
+						<input class="inputCont inputCheck" type="checkbox" id="sabado-cont" value="sabado-cont">
+					</div>
+					<div class="divForm">
+						<label class="labelCont textBlack" for="horario-cont">Horario:</label>
+						<select class="textBlack" name="select" id="horario-cont">
+							<option class="textBlack" value="N/A-cont.2">N/A</option>
+							<option class="textBlack" value="08.12">08:00 a 12:00</option>
+							<option class="textBlack" value="12.16">12:00 a 16:00</option>
+							<option class="textBlack" value="16.20">16:00 a 20:00</option>
+					</div>		
+        		</fieldset>
+				<section class="divForm">
+					<label class="labelCont textBlack" for="enviar"></label>
+					<input class="inputCont textBlack" type="submit" id="enviar" value="Enviar">
+					<label class="labelCont textBlack" for="cancelar"></label>
+					<input class="inputCont textBlack" type="reset" id="cancelar" value="Cancelar">
+				</section>
+        	</form>
+        </section>
+    </main>
+	<footer class="bgDarkBlue pie__block--redes">
+		<a href="#index.html">
+			<img src="../img/logo.png" alt="descripcion del logo">
+		</a>
+		<a href="https://www.instagram.com" target="_blank">
+			<img src="../img/ig.png" alt="Instagram">
+		</a>
+		<a href="https://www.facebook.com" target="_blank">  
+			<img src="../img/fb.png" alt="Facebook">
+		</a>
+		<a href="https://twitter.com/" target="_blank">
+			<img src="../img/tw.png" alt="Twiter">
+		 </a>
+		 <a href="https://www.gmail.com" target="_blank">
+			<img src="../img/gmail.png" alt="Correo electronico">
+		</a>
+</footer>
+</body>
+</html>
